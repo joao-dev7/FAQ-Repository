@@ -7,7 +7,6 @@
     .womanMobile {
         display: block;
         position: absolute;
-        left: 65px;
         bottom: 550px;
         height: 23%;
     }
@@ -58,5 +57,14 @@
     .attribution {
         margin: 0;
         margin-bottom: 15px;
+    }
+}
+
+@media (max-width:1280px) {
+    .boxSvg {
+        position: absolute;
+        top: 44%; 
+        left: 10.7%;
+        width: 12%;
     }
 }

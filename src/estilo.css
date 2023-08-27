@@ -5,6 +5,7 @@ body {
     font-family: Kumbh Sans,sans-serif;
 }
 .conteiner {
+    position: relative;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
     display: flex;
     flex-direction:column;
@@ -12,6 +13,13 @@ body {
     height: 100vh;
     align-items: center;
     justify-content: center;
+}
+
+.boxSvg {
+    position: absolute;
+    top: 42%; 
+    left: 14.5%;
+    width: 12%;
 }
 
 .box {
@@ -30,12 +38,6 @@ body {
     box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 30px;
 }
 
-.boxSvg {
-    position: absolute;
-    width: 12%;
-    bottom: 208px;
-    left: 177.6px;
-}
 
 .blocoDeTexto {
     display: flex;
