@@ -109,5 +109,9 @@ div.panel.show {
     max-height: 500px;
 }
 
+.womanMobile{
+    display: none;
+}
+
 .attribution {  color: white; margin: 20px; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(273, 95%, 22%); }
