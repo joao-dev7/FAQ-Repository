@@ -1,0 +1,61 @@
+@media (max-width:420px) {
+    .conteiner {
+        align-items: center;
+        justify-content: end;
+    }
+    
+    .womanMobile {
+        position: absolute;
+        left: 65px;
+        bottom: 550px;
+        height: 23%;
+    }
+
+    .box {
+        margin-bottom: 50px;
+        width: 330px;
+        height: 550px;
+        border-radius: 25px;
+        background-size: 0%, 77%;
+        background-position-x: 0px, 50%;
+        background-position-y: 0%,-135px;
+    }
+
+    .boxSvg {
+        display: none;
+    }
+
+    .blocoDeTexto {
+        margin: auto;
+        flex-direction: column;
+        width: 290px;
+    }
+
+    div.blocoDeTexto h1 {
+        text-align: center;
+        margin-top: 90px;
+        margin-bottom: 10px;
+        font-size: 37px;
+    }
+
+    p.accordion {
+        font-size: 14px;
+        margin: 0;
+        margin-top: 15px;
+    }
+
+    div.panel{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        width: 290px;
+    }
+
+    p.accordion::after {
+        margin-right: 0px;
+    }
+
+    .attribution {
+        margin: 0;
+        margin-bottom: 15px;
+    }
+}

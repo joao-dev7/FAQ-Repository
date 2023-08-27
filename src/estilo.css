@@ -1,0 +1,113 @@
+body {
+    font-size: 12px;
+    margin: 0px;
+    color: hsl(238, 29%, 16%);
+    font-family: Kumbh Sans,sans-serif;
+}
+.conteiner {
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
+    display: flex;
+    flex-direction:column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 850px;
+    height: 460px;
+    border-radius: 20px;
+    background: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
+    background-size: 50%, 90%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -80px, -412.8px;
+    background-position-y: 53%,65%;
+    background-color: hsl(240, 5%, 91%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 30px;
+}
+
+.boxSvg {
+    position: absolute;
+    width: 12%;
+    bottom: 208px;
+    left: 177.6px;
+}
+
+.blocoDeTexto {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 100px;
+    flex-direction: column;
+    width: 340px;
+}
+
+div.blocoDeTexto h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+div.separador {
+	padding: 0px;
+}
+
+div.caixaPergunta {
+    width: 100%;
+	border-bottom: 1px solid #CCC;
+}
+
+p.accordion {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 13.2px;
+    width: 100%;
+    display: inline-block;
+    margin: 0;
+    margin-top: 15px;
+}
+
+p.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+p.accordion.active {
+    font-weight: 700;
+}
+
+p.accordion::after {
+    content:""; 
+    background-image: url("../images/icon-arrow-down.svg");
+    width:12px;
+    margin-right: 20px;
+    height:15px;
+    background-repeat: no-repeat;
+    float: right;
+    background-position: 0px 5px;
+    background-size: 12px;
+}
+
+p.active::after {
+    transform: rotate(180deg);
+}
+
+div.panel{
+    overflow: hidden;
+    font-size: 11.5px;
+    color: hsl(240, 6%, 50%);
+    max-height: 0;
+    opacity: 0;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 330px;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.attribution {  color: white; margin: 20px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(273, 95%, 22%); }
