@@ -61,10 +61,10 @@
 }
 
 @media (max-width:1280px) {
-    .boxSvg {
-        position: absolute;
-        top: 44%; 
-        left: 10.7%;
-        width: 12%;
-    }
-}
+    .boxSvg {top: 44%;left: 10.7%;}}
+@media (min-width:1366px){
+    .boxSvg {top: 40.5%;left: 13%;}}
+@media (min-width:1440px){
+    .boxSvg {top: 42.5%;left: 14.5%;}}
+@media (min-width:1920px){
+    .boxSvg {top: 44.5%;left: 24%;width: 8%;}}
