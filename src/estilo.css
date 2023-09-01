@@ -1,164 +1,119 @@
-* {
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    font-size: 16px;
-    margin: 0;
-    color: white;
-    padding: 0;
+    font-size: 12px;
+    margin: 0px;
+    color: hsl(238, 29%, 16%);
+    font-family: Kumbh Sans,sans-serif;
 }
-
 .conteiner {
-    background-color: hsl(0, 100%, 74%);
-    background-image: url(../images/bg-intro-desktop.png);
-    height: 100vh;
-    width: 100vw;
+    position: relative;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%)) ;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction:column;
+    width: 100vw;
+    height: 100vh;
     align-items: center;
+    justify-content: center;
 }
 
-.textoLateral {
-    width: 480px;
+.boxSvg {
+    position: absolute;
+    top: 42%; 
+    left: 14.5%;
+    width: 12%;
 }
 
-.textoLateral h1 {
-    font-size: 38.7px;
-    width: 410px;
-    line-height: 45px;
-    margin-bottom: 17px;
-}
-
-.textoLateral p {
-    font-size: 13px;
-    width: 430px;
-    font-weight: 300;
-}
-
-.caixaForm {
-    width: 410px;
-}
-
-.balaoInfo {
-    font-size: 10.5px;
-    height: 42px;
-    line-height: 42px;
-    text-align: center;
-    border-radius: 6px;
-    background-color: hsl(248, 32%, 49%);
-    margin-bottom: 15px;
-    box-shadow: hsla(249, 10%, 26%, 0.196) 0px 4.5px 0px 0px;
-}
-
-.balaoInfo p {
-    font-weight: 300;
-}
-
-.balaoInfo b {
-    font-weight: 600;
-}
-
-.formulario {
+.box {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: white;
-    border-radius: 8px;
-    height: auto;
-    box-shadow: hsla(249, 10%, 26%, 0.196) 0px 4.5px 0px 0px;
+    align-items: end;
+    width: 850px;
+    height: 460px;
+    border-radius: 20px;
+    background: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg);
+    background-size: 50%, 90%;
+    background-repeat: no-repeat, no-repeat;
+    background-position-x: -80px, -412.8px;
+    background-position-y: 53%,65%;
+    background-color: hsl(240, 5%, 91%);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 15px 30px;
 }
 
-form {
-    margin: 30px;
-    margin-top: 25px;
-    margin-bottom: 0;
+
+.blocoDeTexto {
+    display: flex;
+    margin-top: 40px;
+    margin-right: 100px;
+    flex-direction: column;
+    width: 340px;
 }
 
-input {
-    text-indent: 20px;
-    font-size: 12px;
-    font-weight: 500;
-    width: 350px;
-    border-radius: 4px;
-    border: .5px solid #cccaca83;
-    height: 38px;
-    margin-bottom: 15px;
+div.blocoDeTexto h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
 }
 
-input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
-    border: 1px solid hsl(248, 32%, 49%);
+div.separador {
+	padding: 0px;
 }
 
-button {
-    width: 356px;
-    height: 40px;
-    text-transform: uppercase;
-    color: white;
-    font-weight: 500;
-    letter-spacing: .5px;
-    font-size: 10.5px;
-    border-radius: 4px;
-    border: 0;
-    background-color: hsl(154, 59%, 51%);
-    box-shadow: hsl(154, 58%, 46%) 0px 3px 0px 0px;
+div.caixaPergunta {
+    width: 100%;
+	border-bottom: 1px solid #CCC;
 }
 
-button:hover {
-    background-color: hsl(154, 78%, 57%);
-}
-
-.termosAbaixo {
-    margin-top: 13px;
-    margin-bottom: 30px;
-    color: hsl(246, 25%, 77%);
-    font-size: 9.6px;
-}
-
-.termosAbaixo b {
-    color: hsl(0, 100%, 74%);
-}
-
-form p {
-    display: none;
-}
-
-.form-content.erro input {
-    background: url(../images/icon-error.svg) no-repeat;
-    background-size: 18px;
-    background-position: 94% 50%;
-    font-weight: 600;
-    color: hsl(0, 100%, 74%);
-    margin-top: 8px;
-    margin-bottom: 0;
-    border: 1px solid hsl(0, 100%, 74%);
-}
-
-.form-content.erro p {
-    display: block;
-    color: hsl(0, 100%, 74%);
+p.accordion {
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 13.2px;
+    width: 100%;
+    display: inline-block;
     margin: 0;
-    margin: 4px;
-    font-size: 9.5px;
-    font-weight: 600;
-    width: 350px;
-    text-align: end;
-    font-style: italic;
+    margin-top: 15px;
 }
 
-.form-content.erro button {
+p.accordion:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+p.accordion.active {
+    font-weight: 700;
+}
+
+p.accordion::after {
+    content:""; 
+    background-image: url("../images/icon-arrow-down.svg");
+    width:12px;
+    margin-right: 20px;
+    height:15px;
+    background-repeat: no-repeat;
+    float: right;
+    background-position: 0px 5px;
+    background-size: 12px;
+}
+
+p.active::after {
+    transform: rotate(180deg);
+}
+
+div.panel{
+    overflow: hidden;
+    font-size: 11.5px;
+    color: hsl(240, 6%, 50%);
+    max-height: 0;
+    opacity: 0;
     margin-top: 8px;
+    margin-bottom: 8px;
+    width: 330px;
 }
 
-.attribution {
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
+}
+
+.womanMobile{
     display: none;
-    font-size: 11px;
-    text-align: center;
 }
 
-.attribution a {
-    color: hsl(228, 45%, 44%);
-}
+.attribution {  color: white; margin: 20px; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(273, 95%, 22%); }
