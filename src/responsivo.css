@@ -1,70 +1,101 @@
 @media (max-width:420px) {
-    .conteiner {
-        align-items: center;
-        justify-content: end;
-    }
+      body {
+        font-size: 16px;
+      }
     
-    .womanMobile {
-        display: block;
-        position: absolute;
-        bottom: 550px;
-        height: 23%;
-    }
-
-    .box {
-        margin-bottom: 50px;
-        width: 330px;
-        height: 550px;
-        border-radius: 25px;
-        background-size: 0%, 77%;
-        background-position-x: 0px, 50%;
-        background-position-y: 0%,-135px;
-    }
-
-    .boxSvg {
-        display: none;
-    }
-
-    .blocoDeTexto {
-        margin: auto;
+      .conteiner {
         flex-direction: column;
-        width: 290px;
-    }
-
-    div.blocoDeTexto h1 {
+        justify-content: start;
+        align-items: center;
+        background-image: url(../images/bg-intro-mobile.png);
+      }
+    
+      .textoLateral {
+        margin-top: 80px;
+        margin-bottom: 35px;
+        width: 300px;
+      }
+    
+      .textoLateral h1 {
         text-align: center;
-        margin-top: 90px;
-        margin-bottom: 10px;
-        font-size: 37px;
-    }
-
-    p.accordion {
-        font-size: 14px;
-        margin: 0;
-        margin-top: 15px;
-    }
-
-    div.panel{
-        margin-top: 12px;
-        margin-bottom: 12px;
-        width: 290px;
-    }
-
-    p.accordion::after {
-        margin-right: 0px;
-    }
-
-    .attribution {
-        margin: 0;
+        font-size: 25px;
+        width: 300px;
+        line-height: 30px;
+        margin-bottom: 17px;
+      }
+    
+      .textoLateral p {
+        font-size: 12.3px;
+        text-align: center;
+        width: 300px;
+        font-weight: 300;
+      }
+    
+      .caixaForm {
+        width: 285px;
+      }
+      .balaoInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        font-size: 11px;
+        height: 60px;
+        line-height: 17px;
+        border-radius: 6px;
+      }
+    
+      .balaoInfo p {
+        width: 160px;
+      }
+    
+      .formulario {
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        box-shadow: hsla(249, 10%, 26%, 0.196) 0px 4.5px 0px 0px;
+      }
+    
+      form {
+        margin: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+      }
+    
+      input {
+        text-indent: 15px;
+        width: 250px;
         margin-bottom: 15px;
+      }
+    
+      button {
+        width: 256px;
+        height: 45px;
+        font-size: 12px;
+        border-radius: 4px;
+      }
+    
+      .termosAbaixo {
+        text-align: center;
+        width: 200px;
+        font-size: 9.5px;
+        line-height: 17px;
+        margin-top: 12px;
+        margin-bottom: 20px;
+      }
+    
+      .form-content.erro input {
+        background-size: 18px;
+        margin-top: 8px;
+      }
+    
+      .form-content.erro p {
+        margin: 4px;
+        font-size: 9.5px;
+        width: 250px;
+      }
+    
+      .form-content.erro button {
+        margin-top: 8px;
+      }
     }
-}
-
-@media (max-width:1280px) {
-    .boxSvg {top: 44%;left: 10.7%;}}
-@media (min-width:1366px){
-    .boxSvg {top: 40.5%;left: 13%;}}
-@media (min-width:1440px){
-    .boxSvg {top: 42.5%;left: 14.5%;}}
-@media (min-width:1920px){
-    .boxSvg {top: 44.5%;left: 24%;width: 8%;}}
